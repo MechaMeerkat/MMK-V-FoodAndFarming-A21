@@ -1,0 +1,88 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+MMKplantedBeet1,blocks,Farming,,,Beet (Seed)
+MMKplantedBeet2,blocks,Farming,,,Beet (Growing)
+MMKplantedBeet3Harvest,blocks,Farming,,,Beet
+MMKplantedBeetHarvestRandomHelper,blocks,Farming,,,= Beet = Random Helper
+MMKplantedBeet3HarvestDesc,blocks,Farming,,,Beet (Grown)
+MMKplantedBeet3HarvestPlayer,blocks,Farming,,,Beet (Grown)
+MMKfoodCropBeet,items,Food,,,Beet
+MMKplantedCarrot1,blocks,Farming,,,Carrot (Seed)
+MMKplantedCarrot2,blocks,Farming,,,Carrot (Growing)
+MMKplantedCarrot3Harvest,blocks,Farming,,,Carrot
+MMKplantedCarrotHarvestRandomHelper,blocks,Farming,,,= Carrot = Random Helper
+MMKplantedCarrot3HarvestDesc,blocks,Farming,,,Carrot (Grown)
+MMKplantedCarrot3HarvestPlayer,blocks,Farming,,,Carrot (Grown)
+MMKfoodCropCarrot,items,Food,,,Carrot
+MMKplantedCucumber1,blocks,Farming,,,Cucumber (Seed)
+MMKplantedCucumber2,blocks,Farming,,,Cucumber (Growing)
+MMKplantedCucumber3Harvest,blocks,Farming,,,Cucumber
+MMKplantedCucumberHarvestRandomHelper,blocks,Farming,,,= Cucumber = Random Helper
+MMKplantedCucumber3HarvestDesc,blocks,Farming,,,Cucumber (Grown)
+MMKplantedCucumber3HarvestPlayer,blocks,Farming,,,Cucumber (Grown)
+MMKfoodCropCucumber,items,Food,,,Cucumber
+MMKplantedGarlic1,blocks,Farming,,,Garlic (Seed)
+MMKplantedGarlic2,blocks,Farming,,,Garlic (Growing)
+MMKplantedGarlic3Harvest,blocks,Farming,,,Garlic
+MMKplantedGarlicHarvestRandomHelper,blocks,Farming,,,= Garlic = Random Helper
+MMKplantedGarlic3HarvestDesc,blocks,Farming,,,Garlic (Grown)
+MMKplantedGarlic3HarvestPlayer,blocks,Farming,,,Garlic (Grown)
+MMKfoodCropGarlic,items,Food,,,Garlic
+MMKplantedLettuce1,blocks,Farming,,,Lettuce (Seed)
+MMKplantedLettuce2,blocks,Farming,,,Lettuce (Growing)
+MMKplantedLettuce3Harvest,blocks,Farming,,,Lettuce
+MMKplantedLettuceHarvestRandomHelper,blocks,Farming,,,= Lettuce = Random Helper
+MMKplantedLettuce3HarvestDesc,blocks,Farming,,,Lettuce (Grown)
+MMKplantedLettuce3HarvestPlayer,blocks,Farming,,,Lettuce (Grown)
+MMKfoodCropLettuce,items,Food,,,Lettuce
+MMKplantedOnion1,blocks,Farming,,,Onion (Seed)
+MMKplantedOnion2,blocks,Farming,,,Onion (Growing)
+MMKplantedOnionBulb1,blocks,Farming,,,Onion (Bulb)
+MMKplantedOnion3Harvest,blocks,Farming,,,Onion
+MMKplantedOnionHarvestRandomHelper,blocks,Farming,,,= Onion = Random Helper
+MMKplantedOnion3HarvestDesc,blocks,Farming,,,Onion (Grown)
+MMKplantedOnion3HarvestPlayer,blocks,Farming,,,Onion (Grown)
+MMKfoodCropOnion,items,Food,,,Onion
+MMKfoodIngredientPeeledOnion,items,Food,,,Peeled Onion
+MMKfoodIngredientOnionSlices,items,Food,,,Onion Slices
+MMKplantedPeas1,blocks,Farming,,,Peas (Seed)
+MMKplantedPeas2,blocks,Farming,,,Peas (Growing)
+MMKplantedPeas3Harvest,blocks,Farming,,,Peas
+MMKplantedPeasHarvestRandomHelper,blocks,Farming,,,= Peas = Random Helper
+MMKplantedPeas3HarvestDesc,blocks,Farming,,,Peas (Grown)
+MMKplantedPeas3HarvestPlayer,blocks,Farming,,,Peas (Grown)
+MMKfoodCropPeas,items,Food,,,Peas
+MMKplantedTomato1,blocks,Farming,,,Tomato (Seed)
+MMKplantedTomato2,blocks,Farming,,,Tomato (Growing)
+MMKplantedTomato3Harvest,blocks,Farming,,,Tomato
+MMKplantedTomatoHarvestRandomHelper,blocks,Farming,,,= Tomato = Random Helper
+MMKplantedTomato3HarvestDesc,blocks,Farming,,,Tomato (Grown)
+MMKplantedTomato3HarvestPlayer,blocks,Farming,,,Tomato (Grown)
+MMKfoodCropTomato,items,Food,,,Tomato
+MMKplantedWheat1,blocks,Farming,,,Wheat (Seed)
+MMKplantedWheat2,blocks,Farming,,,Wheat (Growing)
+MMKplantedWheat3Harvest,blocks,Farming,,,Wheat
+MMKplantedWheatHarvestRandomHelper,blocks,Farming,,,= Wheat = Random Helper
+MMKplantedWheat3HarvestDesc,blocks,Farming,,,Wheat (Grown)
+MMKplantedWheat3HarvestPlayer,blocks,Farming,,,Wheat (Grown)
+MMKfoodCropWheat,items,Food,,,Wheat
+MMKfoodIngredientFlour,items,Food,,,Flour
+MMKfoodIngredientDough,items,Food,,,Dough
+MMKfoodIngredientMaltVinegar,items,Food,,,Malt Vinegar
+MMKfoodIngredientMaltVinegarDesc,Food,,,Malt Vinegar can be made at the chemistry station by allowing beer to continue fermenting until it becomes vinegar.
+MMKfoodIngredientCornOil,items,Food,,,Corn Oil
+MMKfoodIngredientCornOilDescitems,Food,,,Corn Oil is made at the chemistry station by grinding up corn kernels and soaking in water until the oil separates from the mash, and then collecting the oil.
+MMKfoodIngredientMayo,items,Food,,,Mayonnaise
+MMKfoodIngredientMayoDesc,items,Food,,,Mayonnaise is made at the chemistry station by emulsifying raw egg together with oil.
+MMKfoodPotatoSalad,items,Food,,,Potato Salad,
+MMKfoodPotatoSaladDesc,items,Food,,,Potato Salad can be made at the chemistry station by mixing the ingredients together.
+MMKfoodEggSalad,items,Food,,,Egg Salad,
+MMKfoodEggSaladDesc,items,Food,,,Egg Salad can be made at the chemistry station by mixing the ingredients together.
+foodT1-1,progression,Attribute,,,Tier 1: Grilled Corn, Baked Potato, Corn Oil
+foodT1-4,progression,Attribute,,,Tier 1: Mayonnaise, Boiled Meat, Yucca Juice
+foodT3-1,progression,Attribute,,,Tier 3: Yucca Juice Smoothie, Beer, Malt Vinegar
+foodT3-2,progression,Attribute,,,Tier 3: Hobo Stew & Egg Salad
+foodT3-4,progression,Attribute,,,Tier 3: Chili Dog & Potato Salad
+MMKcookingPrepStation,blocks,Workstation,,,Cooking Prep station
+MMKtoolMortarPestle,items,Item,,,Mortar & Pestle
+MMKtoolMixingBowl,items,Item,,,Mixing Bowl
+MMKtoolChefKnife,items,Melee,,,Chef's Knife

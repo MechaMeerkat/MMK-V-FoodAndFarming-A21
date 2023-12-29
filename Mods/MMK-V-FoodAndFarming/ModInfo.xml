@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="MMK-V-FoodAndFarming" />
+	<DisplayName value="MechaMeerkat's Food and Farming Mod" />
+	<Description value="Adds more options for farming and cooking food" />
+	<Author value="MechaMeerkat" />
+	<Version value="0.0.2" />
+	<Website value="https://github.com/MechaMeerkat/MMK-V-FoodAndFarming" />
+</xml>

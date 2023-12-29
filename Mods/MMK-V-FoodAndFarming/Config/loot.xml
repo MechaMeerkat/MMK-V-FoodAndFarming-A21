@@ -1,0 +1,36 @@
+<config>
+    <append xpath="/lootcontainers/lootgroup[@name='groupIngredientsUncommon']">
+        <item name="foodEggBoiled" count="1,2"/>
+        <item name="MMKfoodIngredientMaltVinegar" count="10,20"/>
+        <item name="MMKfoodIngredientCornOil" count="4,6"/>
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupIngredientsRare']">
+        <item name="foodEggBoiled" count="1,2"/>
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='rareFoodDrink']">
+        <item name="MMKfoodPotatoSalad"/>
+        <item name="MMKfoodEggSalad"/>
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupFoodRare']">
+        <item name="MMKfoodPotatoSalad"/>
+        <item name="MMKfoodEggSalad"/>
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='airdropfood']">
+        <item name="MMKfoodPotatoSalad" loot_prob_template="low"/>
+        <item name="MMKfoodEggSalad" loot_prob_template="low"/>
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='twitch_foodT3']">
+        <item name="MMKfoodPotatoSalad" count="2,3"/>
+        <item name="MMKfoodEggSalad" count="2,3"/>
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupChemistryStationLoot03']">
+        <item name="MMKfoodIngredientMaltVinegar" count="10,20"/>
+        <item name="MMKfoodIngredientCornOil" count="4,6"/>
+    </append>
+</config>

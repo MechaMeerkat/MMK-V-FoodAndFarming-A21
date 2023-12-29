@@ -1,0 +1,197 @@
+<config>
+    <!-- Remove Recipes for Replacement -->
+    <remove xpath="/recipes/recipe[@name='foodCornMeal']"/>
+
+    <append xpath="/recipes">
+    <!-- (========================================================================) -->
+    <!-- (==)                        Workstations/Tools                        (==) -->
+    <!-- (========================================================================) -->
+    
+        <!-- Cooking Prep Station-->
+        <recipe name="MMKcookingPrepStation" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceNail" count="20"/>
+            <ingredient name="resourceWood" count="50"/>
+		</recipe>
+
+        <!-- Tool/Melee: Chef Knife (effectively a T2 knife)-->
+        <recipe name="MMKtoolChefKnife" count="1" craft_area="workbench" tags="learnable,perkDeepCuts">
+            <ingredient name="resourceForgedSteel" count="8"/>
+            <ingredient name="resourceWood" count="4"/>
+            <ingredient name="resourceNail" count="2"/>
+            <ingredient name="resourceScrapIron" count="2"/>
+            <effect_group>
+                <passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedSteel,resourceWood,resourceNails,resourceScrapIron"/>
+            </effect_group>
+        </recipe>
+
+        <!-- Tool: Mixing Bowl -->
+        <recipe name="MMKtoolMixingBowl" count="1" material_based="true" craft_area="forge" is_trackable="false" tags="perkAdvancedEngineering,learnable">
+            <ingredient name="unit_iron" count="100"/>
+            <ingredient name="unit_clay" count="10"/>
+            <effect_group>
+                <passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,unit_iron"/>
+            </effect_group>
+        </recipe>
+    
+        <!-- Tool: Mortar & Pestle -->
+        <recipe name="MMKtoolMortarPestle" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+            <ingredient name="resourceRockSmall" count="15"/>
+            <ingredient name="resourceClayLump" count="1"/>
+        </recipe>
+
+
+    <!-- (========================================================================) -->
+    <!-- (==)                           Seeds/Plants                           (==) -->
+    <!-- (========================================================================) -->
+    
+        <!-- Peas -->
+        <recipe name="MMKplantedPeas1" count="1" craft_time="1" tags="learnable">
+            <ingredient name="MMKfoodCropPeas" count="5"/>
+        </recipe>
+      
+        <!-- Wheat -->
+        <recipe name="MMKplantedWheat1" count="1" craft_time="1" tags="learnable">
+            <ingredient name="MMKfoodCropWheat" count="5"/>
+        </recipe>
+
+    <!-- (========================================================================) -->
+    <!-- (==)                            Food/Drink                            (==) -->
+    <!-- (========================================================================) -->
+    
+    <!-- Conversion Chart: Assumes 1 jar of water = 1 pint -->
+    <!-- 1 jar = 1 pint = 2 cups = 32 tbsp = 96 tsp -->
+
+    <!-- Crafting Area: Cooking Prep Station -->
+        <!-- Cornmeal -->
+        <recipe name="foodCornMeal" count="1" craft_time="4" craft_area="MMKcookingPrepStation" craft_tool="MMKtoolMortarPestle">
+            <ingredient name="foodCropCorn" count="1"/>
+        </recipe>
+        
+        <!-- Flour -->
+        <recipe name="MMKfoodIngredientFlour" count="1" craft_time="96" craft_area="MMKcookingPrepStation" craft_tool="MMKtoolMortarPestle" tags="perkMasterChef,learnable">
+            <ingredient name="MMKfoodCropWheat" count="10"/>
+        </recipe>
+
+        <!-- Dough -->
+        <recipe name="MMKfoodIngredientDough" count="1" craft_time="48" craft_area="MMKcookingPrepStation" craft_tool="MMKtoolMixingBowl" tags="perkMasterChef,learnable">
+            <ingredient name="MMKfoodIngredientFlour" count="5"/>
+            <ingredient name="drinkJarBoiledWater" count="1"/>
+        </recipe>
+
+        <!-- Sliced Onion -->
+        <recipe name="MMKfoodIngredientOnionSlices" count="6" craft_time="4" craft_area="MMKcookingPrepStation" craft_tool="MMKtoolChefKnife" tags="perkMasterChef,learnable">
+            <ingredient name="MMKfoodIngredientPeeledOnion" count="1"/>
+        </recipe>
+
+        <!-- Corn Oil (cups) -->
+        <recipe name="MMKfoodIngredientCornOil" count="8" craft_time="48" craft_area="MMKcookingPrepStation" craft_tool="MMKtoolMixingBowl" tags="perkMasterChef,learnable">
+            <ingredient name="foodCornMeal" count="5"/>
+            <ingredient name="drinkJarBoiledWater" count="4"/>
+        </recipe>
+
+        <!-- Egg Salad (cups) -->
+        <recipe name="MMKfoodEggSalad" count="1" craft_time="21" craft_area="MMKcookingPrepStation" craft_tool="MMKtoolMixingBowl" tags="perkMasterChef,learnable">
+            <ingredient name="foodEggBoiled" count="2"/>
+            <ingredient name="MMKfoodIngredientMayo" count="2"/>
+            <ingredient name="MMKfoodIngredientMaltVinegar" count="1"/>
+        </recipe>
+
+        <!-- Malt Vinegar (tbsps) | Chemistry Workstation -->
+        <recipe name="MMKfoodIngredientMaltVinegar" count="32" craft_time="96" craft_area="chemistryStation" tags="perkMasterChef,learnable">
+            <ingredient name="drinkJarBeer" count="1"/>
+        </recipe>
+
+        <!-- Mayo (tbsps) -->
+        <recipe name="MMKfoodIngredientMayo" count="32" craft_time="12" craft_area="MMKcookingPrepStation" craft_tool="MMKtoolMixingBowl" tags="perkMasterChef,learnable">
+            <ingredient name="foodEgg" count="4"/>
+            <ingredient name="MMKfoodIngredientMaltVinegar" count="4"/>
+            <ingredient name="MMKfoodIngredientCornOil" count="4"/>
+        </recipe>
+
+        <!-- Potato Salad (cups) -->
+        <recipe name="MMKfoodPotatoSalad" count="1" craft_time="21" craft_area="MMKcookingPrepStation" craft_tool="MMKtoolMixingBowl" tags="perkMasterChef,learnable">
+            <ingredient name="foodEggBoiled" count="1"/>
+            <ingredient name="foodBakedPotato" count="2"/>
+            <ingredient name="MMKfoodIngredientMaltVinegar" count="1"/>
+            <ingredient name="MMKfoodIngredientMayo" count="32"/>
+        </recipe>
+
+    
+    <!-- 
+    (========================================================================)
+    (==)                           Canned Goods                           (==)
+    (========================================================================) 
+    ##TODO## 
+        Workstation: Canning Station
+        Tiers:  scrapIron (poor yield), 
+                forgedIron (ok yield), 
+                forgedSteel (excellent yield)
+    -->
+    <!-- Crafting Area: Campfire -->
+    
+        <recipe name="foodCanBeef" count="2" craft_area="campfire" craft_time="75" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+			<ingredient name="foodRawMeat" count="5"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+			<ingredient name="resourceForgedSteel" count="1"/>	
+		</recipe>
+
+        <recipe name="foodCanChicken" count="2" craft_area="campfire" craft_time="75" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+			<ingredient name="foodRawMeat" count="5"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+			<ingredient name="resourceForgedSteel" count="1"/>	
+		</recipe>
+
+        <recipe name="foodCanLamb" count="2" craft_area="campfire" craft_time="75" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+			<ingredient name="foodRawMeat" count="5"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="resourceForgedSteel" count="1"/>	
+		</recipe>
+
+        <recipe name="foodCanCatfood" count="3" craft_area="campfire" craft_time="75" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+			<ingredient name="foodRawMeat" count="2"/>
+			<ingredient name="foodRottingFlesh" count="3"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="resourceForgedSteel" count="1"/>	
+		</recipe>
+
+        <recipe name="foodCanDogfood" count="3" craft_area="campfire" craft_time="75" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+			<ingredient name="foodRawMeat" count="2"/>
+			<ingredient name="foodRottingFlesh" count="3"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="resourceForgedSteel" count="1"/>	
+		</recipe>
+        
+        <recipe name="foodCanTuna" count="2" craft_area="campfire" craft_time="45" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+			<ingredient name="foodRawMeat" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="6"/>
+			<ingredient name="resourceForgedSteel" count="1"/>	
+		</recipe>
+
+        <recipe name="foodCanPasta" count="2" craft_area="campfire" craft_time="45" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+        	<ingredient name="foodCornMeal" count="7"/>
+			<ingredient name="foodCropYuccaFruit" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="4"/>
+			<ingredient name="resourceForgedSteel" count="1"/>	
+        </recipe>
+        
+        <recipe name="foodCanSalmon" count="2" craft_area="campfire" craft_time="45" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+			<ingredient name="foodRawMeat" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="6"/>
+			<ingredient name="resourceForgedSteel" count="1"/>	
+		</recipe>
+
+
+         <recipe name="foodCanPeas" count="1" craft_time="1" tags="learnable">
+            <ingredient name="MMKfoodCropPeas" count="10"/>
+            <ingredient name="drinkJarBoiledWater" count="1"/>
+        </recipe>
+
+        <recipe name="foodCanStock" count="2" craft_area="campfire" craft_time="90" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+			<ingredient name="resourceBone" count="7"/>
+			<ingredient name="foodRawMeat" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="4"/>
+			<ingredient name="resourceForgedSteel" count="1"/>	
+		</recipe>
+    </append>
+    
+</config>

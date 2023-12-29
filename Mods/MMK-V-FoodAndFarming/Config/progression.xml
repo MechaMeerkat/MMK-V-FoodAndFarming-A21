@@ -1,0 +1,98 @@
+<config>
+    <!-- (========================================================================) -->
+    <!-- (==)                            Food/Drink                            (==) -->
+    <!-- (========================================================================) -->
+
+    <!-- Corn Oil -->
+    <!-- Flour -->
+    <!-- Dough -->
+    <!-- Onion Slices -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/display_entry[contains(@name_key, 'foodT1-1')]/unlock_entry[contains(@item, 'foodCornOnTheCob')]/@item">,MMKfoodIngredientCornOil,MMKfoodIngredientFlour,MMKfoodIngredientDough,MMKfoodIngredientOnionSlices</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/effect_group/passive_effect[contains(@tags, 'foodCornOnTheCob')]/@tags">,MMKfoodIngredientCornOil,MMKfoodIngredientFlour,MMKfoodIngredientDough,MMKfoodIngredientOnionSlices</append>
+
+    <!-- Add Mayo to the craftingFood progression -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/display_entry[contains(@name_key, 'foodT1-4')]/unlock_entry[contains(@item, 'foodBoiledMeat')]/@item">,MMKfoodIngredientMayo</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/effect_group/passive_effect[contains(@tags, 'foodBoiledMeat')]/@tags">,MMKfoodIngredientMayo</append>
+
+    <!-- Add Malt Vinegar to the craftingFood progression -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/display_entry[contains(@name_key, 'foodT3-1')]/unlock_entry[contains(@item, 'drinkJarBeer')]/@item">,MMKfoodIngredientMaltVinegar</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/effect_group/passive_effect[contains(@tags, 'drinkJarBeer')]/@tags">,MMKfoodIngredientMaltVinegar</append>
+
+    <!-- Add Egg Salad to the craftingFood progression -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/display_entry[contains(@name_key, 'foodT3-2')]/unlock_entry[contains(@item, 'foodHoboStew')]/@item">,MMKfoodEggSalad</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/effect_group/passive_effect[contains(@tags, 'foodHoboStew')]/@tags">,MMKfoodEggSalad</append>
+
+    <!-- Add Potato Salad to the craftingFood progression -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/display_entry[contains(@name_key, 'foodT3-4')]/unlock_entry[contains(@item, 'foodChiliDog')]/@item">,MMKfoodPotatoSalad</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/effect_group/passive_effect[contains(@tags, 'foodChiliDog')]/@tags">,MMKfoodPotatoSalad</append>
+
+    <!-- (========================================================================) -->
+    <!-- (==)                           Seeds/Plants                           (==) -->
+    <!-- (========================================================================) -->
+    <!-- Beet -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSeeds']/display_entry[contains(@name_key, 'seedsT1-4')]/unlock_entry[contains(@item, 'plantedYucca1')]/@item">,MMKplantedBeet1</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSeeds']/effect_group/passive_effect[contains(@tags, 'plantedYucca1')]/@tags">,MMKplantedBeet1</append>
+
+    <!-- Carrot -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSeeds']/display_entry[contains(@name_key, 'seedsT2-1')]/unlock_entry[contains(@item, 'plantedHop1')]/@item">,MMKplantedCarrot1</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSeeds']/effect_group/passive_effect[contains(@tags, 'plantedHop1')]/@tags">,MMKplantedCarrot1</append>
+
+    <!-- Cucumber -->
+    <!-- Lettuce -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSeeds']/display_entry[contains(@name_key, 'seedsT1-5')]/unlock_entry[contains(@item, 'plantedAloe1')]/@item">,MMKplantedCucumber1,MMKplantedLettuce1</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSeeds']/effect_group/passive_effect[contains(@tags, 'plantedAloe1')]/@tags">,MMKplantedCucumber1,MMKplantedLettuce1</append>
+
+    <!-- Garlic -->
+    <!-- Onion -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSeeds']/display_entry[contains(@name_key, 'seedsT1-1')]/unlock_entry[contains(@item, 'plantedCotton1')]/@item">,MMKplantedGarlic1,MMKplantedOnion1</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSeeds']/effect_group/passive_effect[contains(@tags, 'plantedCotton1')]/@tags">,MMKplantedGarlic1,MMKplantedOnion1</append>
+
+    <!-- Peas -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSeeds']/display_entry[contains(@name_key, 'seedsT2-2')]/unlock_entry[contains(@item, 'plantedPumpkin1')]/@item">,MMKplantedPeas1</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSeeds']/effect_group/passive_effect[contains(@tags, 'plantedPumpkin1')]/@tags">,MMKplantedPeas1</append>
+
+    <!-- Tomato -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSeeds']/display_entry[contains(@name_key, 'seedsT2-5')]/unlock_entry[contains(@item, 'plantedPotato1')]/@item">,MMKplantedTomato1</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSeeds']/effect_group/passive_effect[contains(@tags, 'plantedPotato1')]/@tags">,MMKplantedTomato1</append>
+
+    <!-- Wheat -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSeeds']/display_entry[contains(@name_key, 'seedsT2-4')]/unlock_entry[contains(@item, 'plantedCorn1')]/@item">,MMKplantedWheat1</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSeeds']/effect_group/passive_effect[contains(@tags, 'plantedCorn1')]/@tags">,MMKplantedWheat1</append>
+
+
+    <!-- (========================================================================) -->
+    <!-- (==)                           Canned Goods                           (==) -->
+    <!-- (========================================================================) -->
+    
+    <!-- Existing Canned Goods -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/display_entry[contains(@name_key, 'foodT2-5')]/unlock_entry[contains(@item, 'foodSteakAndPotato')]/@item">,foodCanBeef,foodCanLamb,foodCanChicken,foodCanTuna,foodCanSalmon,foodCanDogfood,foodCanCatfood,foodCanPeas,foodCanStock,foodCanPasta</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/effect_group/passive_effect[contains(@tags, 'foodSteakAndPotato')]/@tags">,foodCanBeef,foodCanLamb,foodCanChicken,foodCanTuna,foodCanSalmon,foodCanDogfood,foodCanCatfood,foodCanPeas,foodCanStock,foodCanPasta</append>
+    
+    <!-- (========================================================================) -->
+    <!-- (==)                        Workstations/Tools                        (==) -->
+    <!-- (========================================================================) -->
+
+    <!-- Cooking Prep Area -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[contains(@name_key, 'workstationsT1-1')]/unlock_entry[@unlock_tier='1']/@item">,MMKcookingPrepStation</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[@level='2,100']/@tags">,MMKcookingPrepStation</append>
+    
+    <!-- Tool/Melee: Chef Knife -->
+    <insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/display_entry[@item='meleeWpnBladeT1HuntingKnife']">
+        <display_entry item="MMKtoolChefKnife" unlock_level="28,34,40,46,75"/>
+    </insertAfter>
+    <insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='meleeWpnBladeT1HuntingKnife']">
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="28,75" value="1" tags="MMKtoolChefKnife"/>
+    </insertAfter>
+    <insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/effect_group/passive_effect[@name='CraftingTier' and @tags='meleeWpnBladeT1HuntingKnife']">
+        <passive_effect name="CraftingTier" operation="base_add" level="28,34,40,46,75" value="1,2,3,4,4" tags="MMKtoolChefKnife"/>
+    </insertAfter>
+
+    <!-- Tool: Mixing Bowl -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[contains(@name_key, 'workstationsT1-2')]/unlock_entry[@unlock_tier='2']/@item">,MMKtoolMixingBowl</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[@level='5,100']/@tags">,MMKtoolMixingBowl</append>
+
+    <!-- Tool: Mortar & Pestle -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[contains(@name_key, 'workstationsT2-1')]/unlock_entry[@unlock_tier='1']/@item">,MMKtoolMortarPestle</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[@level='10,100']/@tags">,MMKtoolMortarPestle</append>
+
+</config>
