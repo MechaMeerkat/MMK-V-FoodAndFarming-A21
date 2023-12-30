@@ -62,38 +62,38 @@
     <!-- 1 jar = 1 pint = 2 cups = 32 tbsp = 96 tsp -->
 
     <!-- Crafting Area: Cooking Prep Station -->
-        <!-- Cornmeal -->
-        <recipe name="foodCornMeal" count="1" craft_time="4" craft_area="MMKcookingPrepStation" craft_tool="MMKtoolMortarPestle">
-            <ingredient name="foodCropCorn" count="1"/>
-        </recipe>
-        
-        <!-- Flour -->
-        <recipe name="MMKfoodIngredientFlour" count="1" craft_time="96" craft_area="MMKcookingPrepStation" craft_tool="MMKtoolMortarPestle" tags="perkMasterChef,learnable">
-            <ingredient name="MMKfoodCropWheat" count="10"/>
-        </recipe>
-
-        <!-- Dough -->
-        <recipe name="MMKfoodIngredientDough" count="1" craft_time="48" craft_area="MMKcookingPrepStation" craft_tool="MMKtoolMixingBowl" tags="perkMasterChef,learnable">
-            <ingredient name="MMKfoodIngredientFlour" count="5"/>
-            <ingredient name="drinkJarBoiledWater" count="1"/>
-        </recipe>
-
-        <!-- Sliced Onion -->
-        <recipe name="MMKfoodIngredientOnionSlices" count="6" craft_time="4" craft_area="MMKcookingPrepStation" craft_tool="MMKtoolChefKnife" tags="perkMasterChef,learnable">
-            <ingredient name="MMKfoodIngredientPeeledOnion" count="1"/>
+        <!-- Carrot Greens -->
+        <recipe name="MMKfoodIngredientCarrotGreens" count="5" craft_time="4" craft_area="prepStation" craft_tool="MMKtoolChefKnife" tags="perkMasterChef,learnable">
+            <ingredient name="MMKplantedCarrotTop1" count="1"/>
         </recipe>
 
         <!-- Corn Oil (cups) -->
-        <recipe name="MMKfoodIngredientCornOil" count="8" craft_time="48" craft_area="MMKcookingPrepStation" craft_tool="MMKtoolMixingBowl" tags="perkMasterChef,learnable">
+        <recipe name="MMKfoodIngredientCornOil" count="8" craft_time="48" craft_area="prepStation" craft_tool="MMKtoolMixingBowl" tags="perkMasterChef,learnable">
             <ingredient name="foodCornMeal" count="5"/>
             <ingredient name="drinkJarBoiledWater" count="4"/>
         </recipe>
 
+        <!-- Cornmeal -->
+        <recipe name="foodCornMeal" count="1" craft_time="4" craft_area="prepStation" craft_tool="MMKtoolMortarPestle">
+            <ingredient name="foodCropCorn" count="1"/>
+        </recipe>
+        
+        <!-- Dough -->
+        <recipe name="MMKfoodIngredientDough" count="1" craft_time="48" craft_area="prepStation" craft_tool="MMKtoolMixingBowl" tags="perkMasterChef,learnable">
+            <ingredient name="MMKfoodIngredientFlour" count="5"/>
+            <ingredient name="drinkJarBoiledWater" count="1"/>
+        </recipe>
+
         <!-- Egg Salad (cups) -->
-        <recipe name="MMKfoodEggSalad" count="1" craft_time="21" craft_area="MMKcookingPrepStation" craft_tool="MMKtoolMixingBowl" tags="perkMasterChef,learnable">
+        <recipe name="MMKfoodEggSalad" count="1" craft_time="21" craft_area="prepStation" craft_tool="MMKtoolMixingBowl" tags="perkMasterChef,learnable">
             <ingredient name="foodEggBoiled" count="2"/>
             <ingredient name="MMKfoodIngredientMayo" count="2"/>
             <ingredient name="MMKfoodIngredientMaltVinegar" count="1"/>
+        </recipe>
+        
+        <!-- Flour -->
+        <recipe name="MMKfoodIngredientFlour" count="1" craft_time="96" craft_area="prepStation" craft_tool="MMKtoolMortarPestle" tags="perkMasterChef,learnable">
+            <ingredient name="MMKfoodCropWheat" count="10"/>
         </recipe>
 
         <!-- Malt Vinegar (tbsps) | Chemistry Workstation -->
@@ -102,14 +102,19 @@
         </recipe>
 
         <!-- Mayo (tbsps) -->
-        <recipe name="MMKfoodIngredientMayo" count="32" craft_time="12" craft_area="MMKcookingPrepStation" craft_tool="MMKtoolMixingBowl" tags="perkMasterChef,learnable">
+        <recipe name="MMKfoodIngredientMayo" count="32" craft_time="12" craft_area="prepStation" craft_tool="MMKtoolMixingBowl" tags="perkMasterChef,learnable">
             <ingredient name="foodEgg" count="4"/>
             <ingredient name="MMKfoodIngredientMaltVinegar" count="4"/>
             <ingredient name="MMKfoodIngredientCornOil" count="4"/>
         </recipe>
 
+        <!-- Onion Slices -->
+        <recipe name="MMKfoodIngredientOnionSlices" count="6" craft_time="4" craft_area="prepStation" craft_tool="MMKtoolChefKnife" tags="perkMasterChef,learnable">
+            <ingredient name="MMKfoodIngredientPeeledOnion" count="1"/>
+        </recipe>
+
         <!-- Potato Salad (cups) -->
-        <recipe name="MMKfoodPotatoSalad" count="1" craft_time="21" craft_area="MMKcookingPrepStation" craft_tool="MMKtoolMixingBowl" tags="perkMasterChef,learnable">
+        <recipe name="MMKfoodPotatoSalad" count="1" craft_time="21" craft_area="prepStation" craft_tool="MMKtoolMixingBowl" tags="perkMasterChef,learnable">
             <ingredient name="foodEggBoiled" count="1"/>
             <ingredient name="foodBakedPotato" count="2"/>
             <ingredient name="MMKfoodIngredientMaltVinegar" count="1"/>
@@ -192,6 +197,76 @@
 			<ingredient name="drinkJarBoiledWater" count="4"/>
 			<ingredient name="resourceForgedSteel" count="1"/>	
 		</recipe>
+
+    <!-- 
+    (========================================================================)
+    (==)                            Composting                            (==)
+    (========================================================================) 
+    -->
+        <recipe name="MMKresourceCompost" count="1" craft_area="compostBin" craft_time="1" always_unlocked="true">
+            <ingredient name="unit_wood" count="1"/>
+            <ingredient name="unit_plants" count="1"/>
+        </recipe>
+        <recipe name="MMKresourceCompost" count="1" craft_area="compostBin" craft_time="1" always_unlocked="true">
+            <ingredient name="unit_wood" count="1"/>
+            <ingredient name="unit_resourceBone" count="1"/>
+        </recipe>
+        <recipe name="MMKresourceCompost" count="1" craft_area="compostBin" craft_time="1" always_unlocked="true">
+            <ingredient name="unit_paper" count="1"/>
+            <ingredient name="unit_plants" count="1"/>
+        </recipe>
+        <recipe name="MMKresourceCompost" count="1" craft_area="compostBin" craft_time="1" always_unlocked="true">
+            <ingredient name="unit_paper" count="1"/>
+            <ingredient name="unit_resourceBone" count="1"/>
+        </recipe>
+        <recipe name="MMKresourceCompost" count="1" craft_area="compostBin" craft_time="1" always_unlocked="true">
+            <ingredient name="unit_cloth" count="1"/>
+            <ingredient name="unit_plants" count="1"/>
+        </recipe>
+        <recipe name="MMKresourceCompost" count="1" craft_area="compostBin" craft_time="1" always_unlocked="true">
+            <ingredient name="unit_cloth" count="1"/>
+            <ingredient name="unit_resourceBone" count="1"/>
+        </recipe>
+        <recipe name="MMKresourceCompost" count="1" craft_area="compostBin" craft_time="1" always_unlocked="true">
+            <ingredient name="MMKresourceBrownWaste" count="1" />
+            <ingredient name="MMKresourceGreenWaste" count="1" />
+        </recipe>
     </append>
-    
+    <!-- Add scrap materials for composting -->
+    <append xpath="/recipes/recipe[@name='resourceBone' and @tooltip='ttScrapMetalBrass' and @tags='salvageScrap']">
+        <recipe name="MMKfoodCropBeet" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+        <recipe name="MMKfoodIngredientBeetroot" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+        <recipe name="MMKfoodIngredientBeetGreens" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+        <recipe name="MMKfoodCropCarrot" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+        <recipe name="MMKfoodIngredientCarrot" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+        <recipe name="MMKfoodIngredientCarrotGreens" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+        <recipe name="MMKfoodCropCucumber" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+        <recipe name="MMKfoodCropGarlic" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+        <recipe name="MMKfoodCropLettuce" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+        <recipe name="MMKfoodCropOnion" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+        <recipe name="MMKfoodIngredientPeeledOnion" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+        <recipe name="MMKfoodIngredientOnionSlices" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+        <recipe name="MMKfoodCropPeas" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+        <recipe name="MMKfoodCropTomato" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+        <recipe name="MMKfoodCropWheat" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+        <recipe name="MMKfoodIngredientDough" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+        <recipe name="MMKfoodIngredientFlour" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+        <recipe name="MMKfoodIngredientMaltVinegar" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+        
+        <recipe name="MMKresourceBrownWaste" count="1" material_based="true" craft_area="compostBin" is_trackable="false" craft_time="0.25" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+            <ingredient name="unit_wood" count ="1"/>
+        </recipe>
+        <recipe name="MMKresourceGreenWaste" count="1" material_based="true" craft_area="compostBin" is_trackable="false" craft_time="0.25" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+            <ingredient name="unit_plants" count ="1"/>
+        </recipe>
+        <recipe name="MMKresourceBrownWaste" count="1" material_based="true" craft_area="compostBin" is_trackable="false" craft_time="0.25" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+            <ingredient name="unit_paper" count ="1"/>
+        </recipe>
+        <recipe name="MMKresourceBrownWaste" count="1" material_based="true" craft_area="compostBin" is_trackable="false" craft_time="0.25" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+            <ingredient name="unit_cloth" count ="1"/>
+        </recipe>
+        <recipe name="MMKresourceGreenWaste" count="1" material_based="true" craft_area="compostBin" is_trackable="false" craft_time="0.25" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+            <ingredient name="unit_resourceBone" count ="1"/>
+        </recipe>
+    </append>
 </config>

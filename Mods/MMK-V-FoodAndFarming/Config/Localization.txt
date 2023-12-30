@@ -5,35 +5,41 @@ MMKplantedBeet3Harvest,blocks,Farming,,,Beet
 MMKplantedBeetHarvestRandomHelper,blocks,Farming,,,= Beet = Random Helper
 MMKplantedBeet3HarvestDesc,blocks,Farming,,,Beet (Grown)
 MMKplantedBeet3HarvestPlayer,blocks,Farming,,,Beet (Grown)
-MMKfoodCropBeet,items,Food,,,Beet
+MMKfoodCropBeet,items,Food,,,Harvested Beet
+MMKfoodCropBeetDesc,items,Food,,,Use the primary action to eat. Use the secondary action to separate into a beetroot and beet greens; or open from your inventory.
+MMKfoodIngredientBeetroot,items,Food,,,Beetroot
+MMKfoodIngredientBeetGreens,items,Food,,,Beet Greens
 MMKplantedCarrot1,blocks,Farming,,,Carrot (Seed)
 MMKplantedCarrot2,blocks,Farming,,,Carrot (Growing)
 MMKplantedCarrot3Harvest,blocks,Farming,,,Carrot
 MMKplantedCarrotHarvestRandomHelper,blocks,Farming,,,= Carrot = Random Helper
 MMKplantedCarrot3HarvestDesc,blocks,Farming,,,Carrot (Grown)
 MMKplantedCarrot3HarvestPlayer,blocks,Farming,,,Carrot (Grown)
-MMKfoodCropCarrot,items,Food,,,Carrot
+MMKfoodCropCarrot,items,Food,,,Harvested Carrot
+MMKfoodCropCarrotDesc,items,Food,,,Use the primary action to eat. Use the secondary action to separate into a carrot and carrot top; or open from your inventory.
+MMKfoodIngredientCarrot,items,Food,,,Carrot
+MMKfoodIngredientCarrotGreens,items,Food,,,Carrot Greens
 MMKplantedCucumber1,blocks,Farming,,,Cucumber (Seed)
 MMKplantedCucumber2,blocks,Farming,,,Cucumber (Growing)
 MMKplantedCucumber3Harvest,blocks,Farming,,,Cucumber
 MMKplantedCucumberHarvestRandomHelper,blocks,Farming,,,= Cucumber = Random Helper
 MMKplantedCucumber3HarvestDesc,blocks,Farming,,,Cucumber (Grown)
 MMKplantedCucumber3HarvestPlayer,blocks,Farming,,,Cucumber (Grown)
-MMKfoodCropCucumber,items,Food,,,Cucumber
+MMKfoodCropCucumber,items,Food,,,Harvested Cucumber
 MMKplantedGarlic1,blocks,Farming,,,Garlic (Seed)
 MMKplantedGarlic2,blocks,Farming,,,Garlic (Growing)
 MMKplantedGarlic3Harvest,blocks,Farming,,,Garlic
 MMKplantedGarlicHarvestRandomHelper,blocks,Farming,,,= Garlic = Random Helper
 MMKplantedGarlic3HarvestDesc,blocks,Farming,,,Garlic (Grown)
 MMKplantedGarlic3HarvestPlayer,blocks,Farming,,,Garlic (Grown)
-MMKfoodCropGarlic,items,Food,,,Garlic
+MMKfoodCropGarlic,items,Food,,,Head of Garlic
 MMKplantedLettuce1,blocks,Farming,,,Lettuce (Seed)
 MMKplantedLettuce2,blocks,Farming,,,Lettuce (Growing)
 MMKplantedLettuce3Harvest,blocks,Farming,,,Lettuce
 MMKplantedLettuceHarvestRandomHelper,blocks,Farming,,,= Lettuce = Random Helper
 MMKplantedLettuce3HarvestDesc,blocks,Farming,,,Lettuce (Grown)
 MMKplantedLettuce3HarvestPlayer,blocks,Farming,,,Lettuce (Grown)
-MMKfoodCropLettuce,items,Food,,,Lettuce
+MMKfoodCropLettuce,items,Food,,,Harvested Lettuce
 MMKplantedOnion1,blocks,Farming,,,Onion (Seed)
 MMKplantedOnion2,blocks,Farming,,,Onion (Growing)
 MMKplantedOnionBulb1,blocks,Farming,,,Onion (Bulb)
@@ -41,7 +47,8 @@ MMKplantedOnion3Harvest,blocks,Farming,,,Onion
 MMKplantedOnionHarvestRandomHelper,blocks,Farming,,,= Onion = Random Helper
 MMKplantedOnion3HarvestDesc,blocks,Farming,,,Onion (Grown)
 MMKplantedOnion3HarvestPlayer,blocks,Farming,,,Onion (Grown)
-MMKfoodCropOnion,items,Food,,,Onion
+MMKfoodCropOnion,items,Food,,,Harvested Onion
+MMKfoodCropOnionDesc,items,Food,,,Use the primary action to eat. Use the secondary action to separate into a carrot and carrot top; or open from your inventory.
 MMKfoodIngredientPeeledOnion,items,Food,,,Peeled Onion
 MMKfoodIngredientOnionSlices,items,Food,,,Onion Slices
 MMKplantedPeas1,blocks,Farming,,,Peas (Seed)
@@ -50,21 +57,21 @@ MMKplantedPeas3Harvest,blocks,Farming,,,Peas
 MMKplantedPeasHarvestRandomHelper,blocks,Farming,,,= Peas = Random Helper
 MMKplantedPeas3HarvestDesc,blocks,Farming,,,Peas (Grown)
 MMKplantedPeas3HarvestPlayer,blocks,Farming,,,Peas (Grown)
-MMKfoodCropPeas,items,Food,,,Peas
+MMKfoodCropPeas,items,Food,,,Harvested Peas
 MMKplantedTomato1,blocks,Farming,,,Tomato (Seed)
 MMKplantedTomato2,blocks,Farming,,,Tomato (Growing)
 MMKplantedTomato3Harvest,blocks,Farming,,,Tomato
 MMKplantedTomatoHarvestRandomHelper,blocks,Farming,,,= Tomato = Random Helper
 MMKplantedTomato3HarvestDesc,blocks,Farming,,,Tomato (Grown)
 MMKplantedTomato3HarvestPlayer,blocks,Farming,,,Tomato (Grown)
-MMKfoodCropTomato,items,Food,,,Tomato
+MMKfoodCropTomato,items,Food,,,Harvested Tomato
 MMKplantedWheat1,blocks,Farming,,,Wheat (Seed)
 MMKplantedWheat2,blocks,Farming,,,Wheat (Growing)
 MMKplantedWheat3Harvest,blocks,Farming,,,Wheat
 MMKplantedWheatHarvestRandomHelper,blocks,Farming,,,= Wheat = Random Helper
 MMKplantedWheat3HarvestDesc,blocks,Farming,,,Wheat (Grown)
 MMKplantedWheat3HarvestPlayer,blocks,Farming,,,Wheat (Grown)
-MMKfoodCropWheat,items,Food,,,Wheat
+MMKfoodCropWheat,items,Food,,,Harvested Wheat
 MMKfoodIngredientFlour,items,Food,,,Flour
 MMKfoodIngredientDough,items,Food,,,Dough
 MMKfoodIngredientMaltVinegar,items,Food,,,Malt Vinegar
@@ -86,3 +93,8 @@ MMKcookingPrepStation,blocks,Workstation,,,Cooking Prep station
 MMKtoolMortarPestle,items,Item,,,Mortar & Pestle
 MMKtoolMixingBowl,items,Item,,,Mixing Bowl
 MMKtoolChefKnife,items,Melee,,,Chef's Knife
+MMKworkstationCompostBin,blocks,Workstation,,,Compost Bin
+MMKresourceCompost,items,Item,,,Compost
+MMKresourceBrownWaste,items,Item,,,Brown Waste
+MMKresourceGreenWaste,items,Item,,,Green Waste
+xuiComposting,UI,Menu,,,Composting

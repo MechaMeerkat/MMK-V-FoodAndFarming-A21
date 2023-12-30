@@ -10,10 +10,10 @@
             <property name="PlantGrowing.Next" value="MMKplantedBeet2"/>
             <property name="UnlockedBy" value="craftingSeeds"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedBeet1Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedBeet1Prefab"/>
             <property name="PlaceAsRandomRotation" value="true"/>
             <drop event="Destroy" name="MMKplantedBeet1" count="1"/>
-            <property name="Group" value="Food/Cooking"/>
+            <property name="Group" value="Resources,Food/Cooking"/>
             <property name="Tags" value="seedSkill"/>
         </block>
 
@@ -23,7 +23,7 @@
             <property name="PlantGrowing.Next" value="MMKplantedBeet3HarvestPlayer"/>
             <property name="CustomIcon" value="MMKplantedBeet2"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedBeet2Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedBeet2Prefab"/>
             <drop event="Destroy" name="MMKplantedBeet1" count="1"/>
         </block>
 
@@ -31,7 +31,7 @@
             <property name="Extends" value="cropsHarvestableMaster"/>
             <property name="CustomIcon" value="MMKfoodCropBeet"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedBeet3Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedBeet3Prefab"/>
             <drop event="Harvest" name="MMKfoodCropBeet" count="1" tag="wildCropsHarvest"/>
             <drop event="Harvest" name="MMKfoodCropBeet" prob="0.5" count="1" tag="bonusCropHarvest"/>
         </block>
@@ -66,10 +66,23 @@
             <property name="PlantGrowing.Next" value="MMKplantedCarrot2"/>
             <property name="UnlockedBy" value="craftingSeeds"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedCarrot1Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedCarrot1Prefab"/>
             <property name="PlaceAsRandomRotation" value="true"/>
             <drop event="Destroy" name="MMKplantedCarrot1" count="1"/>
-            <property name="Group" value="Food/Cooking"/>
+            <property name="Group" value="Resources,Food/Cooking"/>
+            <property name="Tags" value="seedSkill"/>
+        </block>
+
+        <block name="MMKplantedCarrotTop1">
+            <property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="PlantGrowing.Next" value="MMKplantedCarrot2"/>
+            <property name="UnlockedBy" value="craftingSeeds"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedCarrot1Prefab"/>
+            <property name="PlaceAsRandomRotation" value="true"/>
+            <drop event="Destroy" name="MMKplantedCarrot1" count="1"/>
+            <property name="Group" value="Resources,Food/Cooking"/>
             <property name="Tags" value="seedSkill"/>
         </block>
 
@@ -79,7 +92,7 @@
             <property name="PlantGrowing.Next" value="MMKplantedCarrot3HarvestPlayer"/>
             <property name="CustomIcon" value="MMKplantedCarrot2"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedCarrot2Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedCarrot2Prefab"/>
             <drop event="Destroy" name="MMKplantedCarrot1" count="1"/>
         </block>
 
@@ -87,7 +100,7 @@
             <property name="Extends" value="cropsHarvestableMaster"/>
             <property name="CustomIcon" value="MMKfoodCropCarrot"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedCarrot3Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedCarrot3Prefab"/>
             <drop event="Harvest" name="MMKfoodCropCarrot" count="1" tag="wildCropsHarvest"/>
             <drop event="Harvest" name="MMKfoodCropCarrot" prob="0.5" count="1" tag="bonusCropHarvest"/>
         </block>
@@ -122,10 +135,10 @@
             <property name="PlantGrowing.Next" value="MMKplantedCucumber2"/>
             <property name="UnlockedBy" value="craftingSeeds"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedCucumber1Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedCucumber1Prefab"/>
             <property name="PlaceAsRandomRotation" value="true"/>
             <drop event="Destroy" name="MMKplantedCucumber1" count="1"/>
-            <property name="Group" value="Food/Cooking"/>
+            <property name="Group" value="Resources,Food/Cooking"/>
             <property name="Tags" value="seedSkill"/>
         </block>
 
@@ -135,7 +148,7 @@
             <property name="PlantGrowing.Next" value="MMKplantedCucumber3HarvestPlayer"/>
             <property name="CustomIcon" value="MMKplantedCucumber2"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedCucumber2Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedCucumber2Prefab"/>
             <drop event="Destroy" name="MMKplantedCucumber1" count="1"/>
         </block>
 
@@ -143,7 +156,7 @@
             <property name="Extends" value="cropsHarvestableMaster"/>
             <property name="CustomIcon" value="MMKfoodCropCucumber"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedCucumber3Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedCucumber3Prefab"/>
             <drop event="Harvest" name="MMKfoodCropCucumber" count="1" tag="wildCropsHarvest"/>
             <drop event="Harvest" name="MMKfoodCropCucumber" prob="0.5" count="1" tag="bonusCropHarvest"/>
         </block>
@@ -178,10 +191,10 @@
             <property name="PlantGrowing.Next" value="MMKplantedGarlic2"/>
             <property name="UnlockedBy" value="craftingSeeds"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedGarlic1Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedGarlic1Prefab"/>
             <property name="PlaceAsRandomRotation" value="true"/>
             <drop event="Destroy" name="MMKplantedGarlic1" count="1"/>
-            <property name="Group" value="Food/Cooking"/>
+            <property name="Group" value="Resources,Food/Cooking"/>
             <property name="Tags" value="seedSkill"/>
         </block>
 
@@ -191,7 +204,7 @@
             <property name="PlantGrowing.Next" value="MMKplantedGarlic3HarvestPlayer"/>
             <property name="CustomIcon" value="MMKplantedGarlic2"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedGarlic2Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedGarlic2Prefab"/>
             <drop event="Destroy" name="MMKplantedGarlic1" count="1"/>
         </block>
 
@@ -199,7 +212,7 @@
             <property name="Extends" value="cropsHarvestableMaster"/>
             <property name="CustomIcon" value="MMKfoodCropGarlic"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedGarlic3Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedGarlic3Prefab"/>
             <drop event="Harvest" name="MMKfoodCropGarlic" count="1" tag="wildCropsHarvest"/>
             <drop event="Harvest" name="MMKfoodCropGarlic" prob="0.5" count="1" tag="bonusCropHarvest"/>
         </block>
@@ -234,10 +247,10 @@
             <property name="PlantGrowing.Next" value="MMKplantedLettuce2"/>
             <property name="UnlockedBy" value="craftingSeeds"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedLettuce1Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedLettuce1Prefab"/>
             <property name="PlaceAsRandomRotation" value="true"/>
             <drop event="Destroy" name="MMKplantedLettuce1" count="1"/>
-            <property name="Group" value="Food/Cooking"/>
+            <property name="Group" value="Resources,Food/Cooking"/>
             <property name="Tags" value="seedSkill"/>
         </block>
 
@@ -247,7 +260,7 @@
             <property name="PlantGrowing.Next" value="MMKplantedLettuce3HarvestPlayer"/>
             <property name="CustomIcon" value="MMKplantedLettuce2"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedLettuce2Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedLettuce2Prefab"/>
             <drop event="Destroy" name="MMKplantedLettuce1" count="1"/>
         </block>
 
@@ -255,7 +268,7 @@
             <property name="Extends" value="cropsHarvestableMaster"/>
             <property name="CustomIcon" value="MMKfoodCropLettuce"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedLettuce3Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedLettuce3Prefab"/>
             <drop event="Harvest" name="MMKfoodCropLettuce" count="1" tag="wildCropsHarvest"/>
             <drop event="Harvest" name="MMKfoodCropLettuce" prob="0.5" count="1" tag="bonusCropHarvest"/>
         </block>
@@ -290,10 +303,10 @@
             <property name="PlantGrowing.Next" value="MMKplantedOnion2"/>
             <property name="UnlockedBy" value="craftingSeeds"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedOnion1Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedOnion1Prefab"/>
             <property name="PlaceAsRandomRotation" value="true"/>
             <drop event="Destroy" name="MMKplantedOnion1" count="1"/>
-            <property name="Group" value="Food/Cooking"/>
+            <property name="Group" value="Resources,Food/Cooking"/>
             <property name="Tags" value="seedSkill"/>
         </block>
 
@@ -302,10 +315,10 @@
             <property name="CreativeMode" value="Player"/>
             <property name="PlantGrowing.Next" value="MMKplantedOnion2"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedOnion1Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedOnion1Prefab"/>
             <property name="PlaceAsRandomRotation" value="true"/>
             <drop event="Destroy" name="MMKplantedOnion1" count="1"/>
-            <property name="Group" value="Food/Cooking"/>
+            <property name="Group" value="Resources,Food/Cooking"/>
             <property name="Tags" value="seedSkill"/>
         </block>
         <!-- Onion Growth Stage 2-->
@@ -315,7 +328,7 @@
             <property name="PlantGrowing.Next" value="MMKplantedOnion3HarvestPlayer"/>
             <property name="CustomIcon" value="MMKplantedOnion2"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedOnion2Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedOnion2Prefab"/>
             <drop event="Destroy" name="MMKplantedOnion1" count="1"/>
         </block>
 
@@ -324,9 +337,9 @@
             <property name="Extends" value="cropsHarvestableMaster"/>
             <property name="CustomIcon" value="MMKfoodCropOnion"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedOnion3Prefab"/>
-            <drop event="Harvest" name="MMKonionTable" count="1" tag="wildCropsHarvest"/>
-            <!-- <drop event="Harvest" name="MMKfoodCropOnion" prob="0.5" count="1" tag="bonusCropHarvest"/> -->
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedOnion3Prefab"/>
+            <drop event="Harvest" name="MMKfoodCropOnion" count="1" tag="wildCropsHarvest"/>
+            <drop event="Harvest" name="MMKfoodCropOnion" prob="0.5" count="1" tag="bonusCropHarvest"/>
         </block>
 
         <block name="MMKplantedOnionHarvestRandomHelper">
@@ -356,7 +369,7 @@
             <property name="CustomIcon" value="MMKfoodCropOnion"/>
             <property name="Material" value="Morganic"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKblockOnionPrefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKblockOnionPrefab"/>
             <property name="WaterFlow" value="permitted"/>
             <property name="Place" value="TowardsPlacerInverted"/>
             <property name="OnlySimpleRotations" value="true"/>
@@ -377,10 +390,10 @@
             <property name="PlantGrowing.Next" value="MMKplantedPeas2"/>
             <property name="UnlockedBy" value="craftingSeeds"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedPeas1Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedPeas1Prefab"/>
             <property name="PlaceAsRandomRotation" value="true"/>
             <drop event="Destroy" name="MMKplantedPeas1" count="1"/>
-            <property name="Group" value="Food/Cooking"/>
+            <property name="Group" value="Resources,Food/Cooking"/>
             <property name="Tags" value="seedSkill"/>
         </block>
 
@@ -390,7 +403,7 @@
             <property name="PlantGrowing.Next" value="MMKplantedPeas3HarvestPlayer"/>
             <property name="CustomIcon" value="MMKplantedPeas2"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedPeas2Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedPeas2Prefab"/>
             <drop event="Destroy" name="MMKplantedPeas1" count="1"/>
         </block>
 
@@ -398,7 +411,7 @@
             <property name="Extends" value="cropsHarvestableMaster"/>
             <property name="CustomIcon" value="MMKfoodCropPeas"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedPeas3Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedPeas3Prefab"/>
             <drop event="Harvest" name="MMKfoodCropPeas" count="1" tag="wildCropsHarvest"/>
             <drop event="Harvest" name="MMKfoodCropPeas" prob="0.5" count="1" tag="bonusCropHarvest"/>
         </block>
@@ -433,7 +446,7 @@
             <property name="PlantGrowing.Next" value="MMKplantedTomato2"/>
             <property name="UnlockedBy" value="craftingSeeds"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedTomato1Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedTomato1Prefab"/>
             <property name="PlaceAsRandomRotation" value="true"/>
             <drop event="Destroy" name="MMKplantedTomato1" count="1"/>
             <property name="Group" value="Food/Cooking"/>
@@ -446,7 +459,7 @@
             <property name="PlantGrowing.Next" value="MMKplantedTomato3HarvestPlayer"/>
             <property name="CustomIcon" value="MMKplantedTomato2"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedTomato2Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedTomato2Prefab"/>
             <drop event="Destroy" name="MMKplantedTomato1" count="1"/>
         </block>
 
@@ -454,7 +467,7 @@
             <property name="Extends" value="cropsHarvestableMaster"/>
             <property name="CustomIcon" value="MMKfoodCropTomato"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedTomato3Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedTomato3Prefab"/>
             <drop event="Harvest" name="MMKfoodCropTomato" count="1" tag="wildCropsHarvest"/>
             <drop event="Harvest" name="MMKfoodCropTomato" prob="0.5" count="1" tag="bonusCropHarvest"/>
         </block>
@@ -489,10 +502,10 @@
             <property name="PlantGrowing.Next" value="MMKplantedWheat2"/>
             <property name="UnlockedBy" value="craftingSeeds"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedWheat1Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedWheat1Prefab"/>
             <property name="PlaceAsRandomRotation" value="true"/>
             <drop event="Destroy" name="MMKplantedWheat1" count="1"/>
-            <property name="Group" value="Food/Cooking"/>
+            <property name="Group" value="Resources,Food/Cooking"/>
             <property name="Tags" value="seedSkill"/>
         </block>
 
@@ -502,7 +515,7 @@
             <property name="PlantGrowing.Next" value="MMKplantedWheat3HarvestPlayer"/>
             <property name="CustomIcon" value="MMKplantedWheat2"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedWheat2Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedWheat2Prefab"/>
             <drop event="Destroy" name="MMKplantedWheat1" count="1"/>
         </block>
 
@@ -510,7 +523,7 @@
             <property name="Extends" value="cropsHarvestableMaster"/>
             <property name="CustomIcon" value="MMKfoodCropWheat"/>
             <property name="Shape" value="ModelEntity"/>
-            <property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKplantedWheat3Prefab"/>
+            <property name="Model" value="#@modfolder:Assets/MMKcrops.unity3d?MMKplantedWheat3Prefab"/>
             <drop event="Harvest" name="MMKfoodCropWheat" count="1" tag="wildCropsHarvest"/>
             <drop event="Harvest" name="MMKfoodCropWheat" prob="0.5" count="1" tag="bonusCropHarvest"/>
         </block>
@@ -561,7 +574,7 @@
             <!-- Visual -->
 			<property name="Material" value="Mwood"/>
             <property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="#@modfolder:Assets/MMKfarming.unity3d?MMKcookingPrepStationPrefab"/>
+			<property name="Model" value="#@modfolder:Assets/MMKworkstations.unity3d?MMKcookingPrepStationPrefab"/>
 			<property name="FuelValue" value="250"/>
             <property name="ImposterDontBlock" value="true" />
             <property name="WaterFlow" value="permitted" />
@@ -600,5 +613,62 @@
             <property name="Group" value="Food/Cooking,Building,advBuilding" />
             <property name="FilterTags" value="MC_playerBlocks,SC_decor" />
         </block>
+
+        <block name="MMKworkstationCompostBin">
+	        <!-- Class -->
+            <property name="Class" value="Forge"/>
+            <property class="Workstation">
+                <property name="CraftingAreaRecipes" value="compostBin"/>
+                <property name="Modules" value="output,material_input"/>
+                <property name="InputMaterials" value="wood,plants,paper,cloth,resourceBone"/>
+            </property>
+            <property name="UnlockedBy" value="craftingWorkstations"/>
+            <!-- UI_Info -->
+            <property name="CreativeMode" value="Player"/>
+            <property name="DescriptionKey" value="MMKworkstationCompostBinDesc"/>
+            <property name="WorkstationIcon" value="ui_game_symbol_forge"/>
+            <property name="Stacknumber" value="1"/>
+            <!-- Visual -->
+            <property name="Material" value="Mwood"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Model" value="#@modfolder:Assets/MMKworkstations.unity3d?MMKworkstationCompostBinPrefab"/>
+            <!-- <property name="MultiBlockDim" value="2,2,1"/> -->
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="WaterFlow" value="permitted"/>
+            <!-- <property name="ParticleName" value="forgeWorkstation"/>
+            <property name="ParticleOffset" value="0,0.4,0.5"/> -->
+            <!-- Placement -->
+            <property name="Place" value="TowardsPlacerInverted"/>
+            <property name="OnlySimpleRotations" value="true"/>
+            <property name="Path" value="solid"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="StabilitySupport" value="true"/>
+            <!-- Value -->
+            <property name="Weight" value="0"/>
+            <property name="EconomicValue" value="25"/>
+            <property name="TraderStageTemplate" value="midTier0"/>
+            <!-- Interaction -->
+            <property name="MaxDamage" value="500"/>
+            <property name="HeatMapStrength" value="1"/>
+            <property name="HeatMapTime" value="5000"/>
+            <property name="HeatMapFrequency" value="1000"/>
+            <property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+            <property name="OpenSound" value="door_wood_roughcut_open"/>
+            <property name="CloseSound" value="door_wood_roughcut_close"/>
+            <property name="CraftSound" value="forge_smelt_click"/>
+            <property name="CraftCompleteSound" value="forge_item_complete"/>
+            <property name="TakeDelay" value="15"/>
+            <property class="RepairItems">
+                <property name="resourceWood" value="2"/>
+            </property>
+            <drop event="Harvest" name="resourceWood" count="40" tag="allHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+            <!-- Sorting -->
+            <property name="Group" value="Building,TCScience,advBuilding"/>
+            <property name="Tags" value="workstationSkill,twitch_workstation"/>
+            <property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+        </block>
+
     </insertAfter>
 </config>
