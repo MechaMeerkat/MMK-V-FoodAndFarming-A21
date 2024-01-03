@@ -1,4 +1,24 @@
 <config>
+    <append xpath="/lootcontainers/lootgroup[@name='seeds']">
+        <item name="MMKplantedBeet1"/>
+        <item name="MMKplantedCarrot1"/>
+        <item name="MMKplantedCucumber1"/>
+        <item name="MMKplantedGarlic1"/>
+        <item name="MMKplantedLettuce1"/>
+        <item name="MMKplantedOnion1"/>
+        <item name="MMKplantedPeas1"/>
+        <item name="MMKplantedWheat1"/>
+    </append>
+    <append xpath="/lootcontainers/lootgroup[@name='seedsNoFlowers']">
+        <item name="MMKplantedBeet1"/>
+        <item name="MMKplantedCarrot1"/>
+        <item name="MMKplantedCucumber1"/>
+        <item name="MMKplantedGarlic1"/>
+        <item name="MMKplantedLettuce1"/>
+        <item name="MMKplantedOnion1"/>
+        <item name="MMKplantedPeas1"/>
+        <item name="MMKplantedWheat1"/>
+    </append>
     <append xpath="/lootcontainers/lootgroup[@name='groupIngredientsUncommon']">
         <item name="foodEggBoiled" count="1,2"/>
         <item name="MMKfoodIngredientMaltVinegar" count="10,20"/>

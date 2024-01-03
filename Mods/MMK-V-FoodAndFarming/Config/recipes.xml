@@ -58,6 +58,23 @@
     <!-- (==)                            Food/Drink                            (==) -->
     <!-- (========================================================================) -->
     
+    <!-- Empty Jars/Cans -->
+    <recipe name="MMKdrinkJarEmpty" count="1" material_based="true" craft_area="forge" is_trackable="false" tags="perkAdvancedEngineering">
+        <ingredient name="unit_glass" count="10"/>
+        <ingredient name="unit_clay" count="1"/>
+        <effect_group>
+            <passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,unit_glass"/>
+        </effect_group>
+    </recipe>
+
+    <recipe name="MMKdrinkCanEmpty" count="1" material_based="true" craft_area="forge" is_trackable="false" tags="perkAdvancedEngineering">
+        <ingredient name="unit_iron" count="5"/>
+        <ingredient name="unit_clay" count="1"/>
+        <effect_group>
+            <passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_iron"/>
+        </effect_group>
+    </recipe>
+
     <!-- Conversion Chart: Assumes 1 jar of water = 1 pint -->
     <!-- 1 jar = 1 pint = 2 cups = 32 tbsp = 96 tsp -->
 

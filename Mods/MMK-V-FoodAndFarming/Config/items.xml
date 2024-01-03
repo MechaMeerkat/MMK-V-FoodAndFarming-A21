@@ -51,7 +51,7 @@
             <property name="HoldType" value="31"/>
             <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
             <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-            <property name="Material" value="MresourceCrop"/>
+            <property name="Material" value="Mplants"/>
             <property name="MeltTimePerUnit" value=".4"/>
             <property name="Stacknumber" value="125"/>
             <property name="EconomicValue" value="10"/>
@@ -734,6 +734,94 @@
         </item> -->
 
     <!-- (========================================================================) -->
+    <!-- (==)                          Canned Foods                            (==) -->
+    <!-- (========================================================================) -->
+
+    <!-- 
+        Replace Canned Food with bundles that have to be opened to get the contents
+        but there's a random chance the food is rotten meat/waste
+    -->
+        <!-- <remove xpath="/items/item[@name='foodCanBeef')]"/> -->
+
+        <item name="MMKfoodCanMeatBundleMaster">
+            <property name="CreativeMode" value="None"/>
+            <property name="CustomIcon" value="foodCanBeef"/>
+            <property name="ItemTypeIcon" value="bundle"/>
+            <property name="CustomIconTint" value="ff9f9f"/>
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+            <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Stacknumber" value="10"/>
+            <property name="EconomicValue" value="60"/>
+            <property name="EconomicBundleSize" value="1"/>
+            <property name="Weight" value="0"/>
+            <property name="SellableToTrader" value="true"/>
+            <property name="Group" value="Resources,Food/Cooking,CFFood/Cooking"/>
+            <property name="Tags" value="food,foodSkill"/>
+            <property class="Action0">
+                <property name="Class" value="OpenBundle"/>
+                <property name="Delay" value="0"/>
+                <property name="Sound_start" value="paint"/>
+            </property>
+        </item>
+
+        <item name="MMKfoodCanBeef">
+            <property name="CreativeMode" value="Player"/>
+            <property name="Extends" value="MMKfoodCanMeatBundleMaster"/>
+            <property class="Action0">
+                <property name="Create_item" value="MMKdrinkCanEmpty"/>
+                <property name="Create_item_count" value="1"/>
+                <property name="Random_item" value="foodBoiledMeat,foodRottingFlesh"/>
+                <property name="Random_item_count" value="3,3"/>
+                <property name="Random_count" value="1"/>
+                <property name="Unique_random_only" value="true"/>
+            </property>
+        </item>
+        <!-- <item name="foodCanChicken">
+            <property name="Extends" value="MMKfoodCanMeatBundleMaster"/>
+            <property class="Action0">
+                <property name="Random_count" value="3"/>
+            </property>
+        </item>
+        <item name="foodCanLamb">
+            <property name="Extends" value="MMKfoodCanMeatBundleMaster"/>
+            <property class="Action0">
+                <property name="Random_count" value="3"/>
+            </property>
+        </item>
+        <item name="foodCanCatfood">
+            <property name="Extends" value="MMKfoodCanMeatBundleMaster"/>
+            <property class="Action0">
+                <property name="Random_count" value="2"/>
+            </property>
+        </item>
+        <item name="foodCanDogfood">
+            <property name="Extends" value="MMKfoodCanMeatBundleMaster"/>
+            <property class="Action0">
+                <property name="Random_count" value="2"/>
+            </property>
+        </item>
+        <item name="foodCanTuna">
+            <property name="Extends" value="MMKfoodCanMeatBundleMaster"/>
+            <property class="Action0">
+                <property name="Random_count" value="2"/>
+            </property>
+        </item>
+        <item name="foodCanSham">
+            <property name="Extends" value="MMKfoodCanMeatBundleMaster"/>
+            <property class="Action0">
+                <property name="Random_count" value="3"/>
+            </property>
+        </item>
+        <item name="foodCanSalmon">
+            <property name="Extends" value="MMKfoodCanMeatBundleMaster"/>
+            <property class="Action0">
+                <property name="Random_count" value="3"/>
+            </property>
+        </item> -->
+
+    <!-- (========================================================================) -->
     <!-- (==)                              Tools                               (==) -->
     <!-- (========================================================================) -->
         <!-- Tool/Melee: Chef Knife (effectively a T2 knife)-->
@@ -972,28 +1060,34 @@
             <property name="CraftingIngredientTime" value=".2"/>
         </item>
 
-
     </append>
-    <!-- Custom Drink Jar Images for Existing Drinks -->
-    <insertAfter xpath="/items/item[@name='drinkJarBeer']/property[@name='DisplayType']">
-        <property name="CustomIcon" value="MMKdrinkJarBeer"/>
-    </insertAfter>
-    <insertAfter xpath="/items/item[@name='drinkJarBlackStrapCoffee']/property[@name='Extends']">
-        <property name="CustomIcon" value="MMKdrinkJarBlackStrapCoffee"/>
-    </insertAfter>
-    <insertAfter xpath="/items/item[@name='drinkJarBoiledWater']/property[@name='DisplayType']">
-        <property name="CustomIcon" value="MMKdrinkJarBoiledWater"/>
-    </insertAfter>
-    <insertAfter xpath="/items/item[@name='drinkJarCoffee']/property[@name='DisplayType']">
-        <property name="CustomIcon" value="MMKdrinkJarCoffee"/>
-    </insertAfter>
-    <insertAfter xpath="/items/item[@name='drinkJarGoldenRodTea']/property[@name='DisplayType']">
-        <property name="CustomIcon" value="MMKdrinkJarGoldenRodTea"/>
-    </insertAfter>
-    <insertAfter xpath="/items/item[@name='drinkJarRedTea']/property[@name='DisplayType']">
-        <property name="CustomIcon" value="MMKdrinkJarRedTea"/>
-    </insertAfter>
-    <insertAfter xpath="/items/item[@name='drinkJarRiverWater']/property[@name='DisplayType']">
-        <property name="CustomIcon" value="MMKdrinkJarRiverWater"/>
-    </insertAfter>
+
+    <!-- Updates for Empty Jars/Cans-->
+    <append xpath="/items/item[@name='foodHoney']/property[@class='Action0']"><property name="Create_item" value="MMKdrinkJarEmpty"/></append>
+    <append xpath="/items/item[@name='drinkJarRiverWater']/property[@class='Action0']"><property name="Create_item" value="MMKdrinkJarEmpty"/></append>
+    <append xpath="/items/item[@name='drinkJarBoiledWater']/property[@class='Action0']"><property name="Create_item" value="MMKdrinkJarEmpty"/></append>
+    <append xpath="/items/item[@name='drinkJarPureMineralWater']/property[@class='Action0']"><property name="Create_item" value="MMKdrinkJarEmpty"/></append>
+    <append xpath="/items/item[@name='drinkJarYuccaJuice']/property[@class='Action0']"><property name="Create_item" value="MMKdrinkJarEmpty"/></append>
+    <append xpath="/items/item[@name='drinkJarGoldenRodTea']/property[@class='Action0']"><property name="Create_item" value="MMKdrinkJarEmpty"/></append>
+    <append xpath="/items/item[@name='drinkJarRedTea']/property[@class='Action0']"><property name="Create_item" value="MMKdrinkJarEmpty"/></append>
+    <append xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/property[@class='Action0']"><property name="Create_item" value="MMKdrinkJarEmpty"/></append>
+    <append xpath="/items/item[@name='drinkJarCoffee']/property[@class='Action0']"><property name="Create_item" value="MMKdrinkJarEmpty"/></append>
+    <append xpath="/items/item[@name='drinkJarBeer']/property[@class='Action0']"><property name="Create_item" value="MMKdrinkJarEmpty"/></append>
+    <append xpath="/items/item[@name='drinkJarGrandpasMoonshine']/property[@class='Action0']"><property name="Create_item" value="MMKdrinkJarEmpty"/></append>
+    <append xpath="/items/item[@name='drinkJarGrandpasAwesomeSauce']/property[@class='Action0']"><property name="Create_item" value="MMKdrinkJarEmpty"/></append>
+    <append xpath="/items/item[@name='drinkJarGrandpasLearningElixir']/property[@class='Action0']"><property name="Create_item" value="MMKdrinkJarEmpty"/></append>
+    <append xpath="/items/item[@name='drinkJarGrandpasForgettingElixir']/property[@class='Action0']"><property name="Create_item" value="MMKdrinkJarEmpty"/></append>
+    <append xpath="/items/item[@name='foodCanBeef']/property[@class='Action0']"><property name="Create_item" value="MMKdrinkCanEmpty"/></append>
+
+    <!-- Custom Drink Jar Images for Existing Food/Drinks/Crops -->
+    <insertAfter xpath="/items/item[@name='drinkJarBeer']/property[@name='DisplayType']"><property name="CustomIcon" value="MMKdrinkJarBeer"/></insertAfter>
+    <insertAfter xpath="/items/item[@name='drinkJarBlackStrapCoffee']/property[@name='Extends']"><property name="CustomIcon" value="MMKdrinkJarBlackStrapCoffee"/></insertAfter>
+    <insertAfter xpath="/items/item[@name='drinkJarBoiledWater']/property[@name='DisplayType']"><property name="CustomIcon" value="MMKdrinkJarBoiledWater"/></insertAfter>
+    <insertAfter xpath="/items/item[@name='drinkJarCoffee']/property[@name='DisplayType']"><property name="CustomIcon" value="MMKdrinkJarCoffee"/></insertAfter>
+    <insertAfter xpath="/items/item[@name='drinkJarGoldenRodTea']/property[@name='DisplayType']"><property name="CustomIcon" value="MMKdrinkJarGoldenRodTea"/></insertAfter>
+    <insertAfter xpath="/items/item[@name='drinkJarRedTea']/property[@name='DisplayType']"><property name="CustomIcon" value="MMKdrinkJarRedTea"/></insertAfter>
+    <insertAfter xpath="/items/item[@name='drinkCanMegaCrush']/property[@name='DisplayType']"><property name="CustomIcon" value="MMKdrinkCanMegaCrush"/></insertAfter>
+    <insertAfter xpath="/items/item[@name='drinkJarRiverWater']/property[@name='DisplayType']"><property name="CustomIcon" value="MMKdrinkJarRiverWater"/></insertAfter>
+    <set xpath="/items/item[@name='resourceCropChrysanthemumPlant']/property[@name='CustomIcon']/@value">MMKresourceCropChrysanthemumPlant</set>
+    <set xpath="/items/item[@name='resourceCropGoldenrodPlant']/property[@name='CustomIcon']/@value">MMKresourceCropGoldenrodPlant</set>
 </config>

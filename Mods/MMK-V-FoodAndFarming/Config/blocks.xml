@@ -671,4 +671,17 @@
         </block>
 
     </insertAfter>
+
+     <!-- Custom Images for Existing Seeds -->
+    <insertAfter xpath="/blocks/block[@name='plantedAloe1']/property[@name='Extends']"><property name="CustomIcon" value="MMKplantedAloe1"/></insertAfter>
+    <insertAfter xpath="/blocks/block[@name='plantedBlueberry1']/property[@name='Extends']"><property name="CustomIcon" value="MMKplantedBlueberry1"/></insertAfter>
+    <insertAfter xpath="/blocks/block[@name='plantedChrysanthemum1']/property[@name='Extends']"><property name="CustomIcon" value="MMKplantedChrysanthemum1"/></insertAfter>
+    <insertAfter xpath="/blocks/block[@name='plantedCoffee1']/property[@name='Extends']"><property name="CustomIcon" value="MMKplantedCoffee1"/></insertAfter>
+    <insertAfter xpath="/blocks/block[@name='plantedCorn1']/property[@name='Extends']"><property name="CustomIcon" value="MMKplantedCorn1"/></insertAfter>
+    <set xpath="/blocks/block[@name='plantedGoldenrod1']/property[@name='CustomIcon']/@value">MMKplantedGoldenrod1</set>
+    <insertAfter xpath="/blocks/block[@name='plantedHop1']/property[@name='Extends']"><property name="CustomIcon" value="MMKplantedHop1"/></insertAfter>
+    <insertAfter xpath="/blocks/block[@name='plantedMushroom1']/property[@name='Extends']"><property name="CustomIcon" value="MMKplantedMushroom1"/></insertAfter>
+    <insertAfter xpath="/blocks/block[@name='plantedPotato1']/property[@name='Extends']"><property name="CustomIcon" value="MMKplantedPotato1"/></insertAfter>
+    <insertAfter xpath="/blocks/block[@name='plantedPumpkin1']/property[@name='Extends']"><property name="CustomIcon" value="MMKplantedPumpkin1"/></insertAfter>
+    <insertAfter xpath="/blocks/block[@name='plantedYucca1']/property[@name='Extends']"><property name="CustomIcon" value="MMKplantedYucca1"/></insertAfter>
 </config>
